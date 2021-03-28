@@ -1,0 +1,27 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrittPlum/Team-Profile-Generator.git"
+  },
+  "author": "Brittany Plummer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrittPlum/Team-Profile-Generator/issues"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
