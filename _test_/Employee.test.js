@@ -16,6 +16,7 @@ describe('Employee', () => {
 
         
     
+        });
     });
     describe('getName method', () => {
         it("should return the inputted employee.name when employee.getName is called", () => {
@@ -48,13 +49,13 @@ describe('Employee', () => {
         });
     });
     describe('getRole method', () => {
-        it("should return the inputted employee.role when employee.getRole is called", () => {
-            const role = "employee";
-            const employee = new Employee("John", "505", "test@email.com", role)
+        it("should return the inputted employee when employee.getRole is called", () => {
+            const role = "Employee";
+            const employee = new Employee("John", "505", "test@email.com")
         
             expect(employee.getRole()).toEqual(role);
         });
     });
 
   });
-});
+

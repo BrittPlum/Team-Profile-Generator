@@ -19,6 +19,7 @@ describe('Intern', () => {
 
         
     
+         });
     });
     describe('getName method', () => {
         it("should return the inputted intern.name when intern.getName is called", () => {
@@ -55,20 +56,20 @@ describe('Intern', () => {
             const school = "schoolname";
             const intern = new Intern("John", "404", "test@email.com", school);
 
-            expect(internr.getSchool()).toEqual(school);
+            expect(intern.getSchool()).toEqual(school);
 
         
         
         });
     });
     describe('getRole method', () => {
-        it("should return the inputted intern.role when intern.getRole is called", () => {
-            const role = "intern";
-            const intern = new Intern("John", "505", "test@email.com", "school", role)
+        it("should return the inputted intern when intern.getRole is called", () => {
+            const role = "Intern";
+            const intern = new Intern("John", "505", "test@email.com", "school")
         
             expect(intern.getRole()).toEqual(role);
         });
     });
 
   });
-});
+

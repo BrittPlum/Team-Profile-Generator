@@ -9,7 +9,7 @@ describe('Manager', () => {
         const id = "101";
         const email = "bill@test.com"
         const officeNumber = "officenumber"
-        const bill = new Intern(name, id, email, officeNumber);
+        const bill = new Manager(name, id, email, officeNumber);
         
 
         expect(bill.name).toEqual(name);
@@ -19,6 +19,7 @@ describe('Manager', () => {
 
         
     
+        });
     });
     describe('getName method', () => {
         it("should return the inputted manager.name when manager.getName is called", () => {
@@ -62,13 +63,13 @@ describe('Manager', () => {
         });
     });
     describe('getRole method', () => {
-        it("should return the inputted manager.role when manager.getRole is called", () => {
-            const role = "intern";
-            const manager = new Manager("John", "505", "test@email.com", "officeNumber", role)
+        it("should return the inputted manager when manager.getRole is called", () => {
+            const role = "Manager";
+            const manager = new Manager("John", "505", "test@email.com", "officeNumber")
         
             expect(manager.getRole()).toEqual(role);
         });
     });
 
   });
-});
+

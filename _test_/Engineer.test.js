@@ -18,6 +18,7 @@ describe('Engineer', () => {
         expect(bill.github).toEqual(github);
         
     
+        });
     });
     describe('getName method', () => {
         it("should return the inputted engineer.name when engineer.getName is called", () => {
@@ -61,13 +62,13 @@ describe('Engineer', () => {
         });
     });
     describe('getRole method', () => {
-        it("should return the inputted engineer.role when engineer.getRole is called", () => {
-            const role = "engineer";
-            const engineer = new Engineer("John", "505", "test@email.com", "github", role)
+        it("should return the inputted engineer when engineer.getRole is called", () => {
+            const role = "Engineer";
+            const engineer = new Engineer("John", "505", "test@email.com", "github")
         
             expect(engineer.getRole()).toEqual(role);
         });
     });
 
   });
-});
+
